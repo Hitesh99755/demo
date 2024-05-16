@@ -23,4 +23,10 @@ public class HomeController {
 	return "Insert Data Success full !!!   :)";
 	}
 
+	@GetMapping("/getData")
+	public String getData(@RequestBody Employee e){
+	hs.AllData(e);
+	return "Success";	
+
+		
 }
